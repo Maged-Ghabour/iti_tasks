@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizz Buzz Game..! 😃  </title>
+</head>
+    <style>
+  
+    </style>
+<body>
+    <input type="number" id="input" onchange="checkDivision()" placeholder="Enter Number Here">
+    <input type="text" id="output" disabled>
+<script>
+
+    
+
+
+
+
+    function checkDivision(){
+       var input = document.getElementById("input");
+       var output = document.getElementById("output");
+        
+      
+        if(input.value % 3 == 0 && input.value % 5 == 0 && input.value != "" ){
+                output.value = "Fizz buzz"
+        }else if(input.value % 3 == 0 && input.value != "" ){
+                output.value = "Fizz"
+        }else if(input.value % 5 == 0 && input.value != "" ){
+                output.value = "buzz"
+        }else{
+            output.value = ""
+        }
+       }
+   
+</script>
+</body>
+</html>

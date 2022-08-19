@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var root =""
+        var cosValue = ""
+
+
+        function areaOfCircle(){
+         var raduis =prompt("What is the value of circles raduis" , "Type raduis Here");
+            if(isFinite(raduis))
+            return  Math.PI* Number(Math.pow(raduis,2))
+            return areaOfCircle();
+        }
+
+        function squreRoot(){
+             root =+prompt("What is the value you want to calculate its square root...!" , "Type Your Value Here");
+           
+            if(isFinite(root))
+             
+            return Math.sqrt(root);
+            return squreRoot();
+        }
+        function cosCalc(){
+            cosValue =prompt("What is the value you want to calculate its COS value...!" , "Type Your Value Here");
+           
+            if(isFinite(cosValue))
+             
+            return (  Math.cos(cosValue * (Math.PI)/180 ).toFixed(2) );
+            return cosCalc();
+        }
+
+
+   
+        alert("The Total Area Of Circle is " + areaOfCircle())
+        alert("Squre root of " + root + "is " +  squreRoot());
+        
+        document.write("COS " + cosValue + "is " +  cosCalc())
+
+
+
+        
+   
+        
+    </script>
+</body>
+</html>

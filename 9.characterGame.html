@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            margin:5px;
+        }
+    </style>
+</head>
+<body>
+
+    <input type="text" id="input"  onkeyup="inputFun()"   placeholder="Enter Your string Here...!">
+    <input type="text" id="letter" onkeyup="letterFun()" maxlength="1" ><br>
+    <input type="text" id="output" disabled>
+
+
+
+
+    <script>
+        var input  = document.getElementById("input");
+        var letter = document.getElementById("letter");
+        var output = document.getElementById("output");
+
+    function inputFun(){
+        var arr =[]
+            for (var i = 0; i < input.value.length; i++) {
+                if(input.value.charAt(i) == letter.value){
+                    arr.push(i+1)
+                }
+            }
+           
+            output.value = "[" + arr + "]"
+    }
+
+    function letterFun(){
+        var arr =[]
+            for (var i = 0; i < input.value.length; i++) {
+                if(input.value.charAt(i) == letter.value){
+                    arr.push(i+1)
+                }
+            }
+           
+            output.value = "[" + arr + "]"
+    }
+
+
+
+
+
+
+
+
+        // With using AddEvnetListener 
+    /*
+        input.addEventListener("keyup" , function(){
+        
+            var arr =[]
+            for (var i = 0; i < input.value.length; i++) {
+                if(input.value.charAt(i) == letter.value){
+                    arr.push(i+1)
+                }
+            }
+           
+            output.value = "[" + arr + "]"
+            
+        })
+
+
+        letter.addEventListener("keyup" , function(){
+        
+        var arr =[]
+        for (var i = 0; i < input.value.length; i++) {
+            if(input.value.charAt(i) == letter.value){
+                arr.push(i+1)
+            }
+        }
+       
+        output.value = "[" + arr + "]"
+        
+    })
+    */
+
+    </script>
+</body>
+</html>

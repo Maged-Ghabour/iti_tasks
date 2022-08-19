@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arr= [];
+
+        arr.push(prompt("Enter First Number"))
+        arr.push(prompt("Enter second Number"))
+        arr.push(prompt("Enter third Number"))
+        arr.push(prompt("Enter fourth Number"))
+        arr.push(prompt("Enter fifth Number"))
+
+     
+        
+        //  slice(0) ==> To make an Array is immutable
+        var ascending = arr.slice(0).sort(function(a, b) {
+                return a - b;
+        });
+        var descending = arr.slice(0).sort(function(a, b) {
+                return b - a;
+        });
+        document.write("<h1 style='text-align:center'>Sorting</h1><hr>")
+        document.write("<p style='color:red'>u\'ve entered the value of " +  "<span style='color:black'>" + arr[0] + "," + arr[1] + "," + arr[2] + "," + arr[3] , "," + arr[4] + "</span></p>")
+        document.write("<p style='color:red'>u\'ve stored descending of " +  "<span style='color:black'>" + descending[0] + "," + descending[1] + "," + descending[2] + "," + descending[3] , "," + descending[4] + "</span></p>")
+        document.write("<p style='color:red'>u\'ve stored ascending of " +  "<span style='color:black'>" + ascending[0] + "," + ascending[1] + "," + ascending[2] + "," + ascending[3] , "," + ascending[4] + "</span></p>")
+      
+
+
+
+    </script>
+</body>
+</html>

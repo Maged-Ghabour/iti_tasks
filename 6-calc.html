@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+</head>
+<body>
+    <script>
+       
+    var arr = [];
+
+    arr.push(+prompt("Enter The first Number"));
+    arr.push(+prompt("Enter The second Number"));
+    arr.push(+prompt("Enter The third Number"));
+
+    var adding = arr[0] + arr[1] + arr[2];
+    var mult = arr[0] * arr[1] * arr[2];
+    var div = arr[0] / arr[1] / arr[2];
+
+
+
+
+    function writeInDom(){
+        document.write("<h1>Adding --- Mulipling --- and deviding 3 values</h1><hr>");
+        document.write("<p style='color:red'>Sum Of Three Values is " + "<span style='color:black'>" + arr[0] + "+" + arr[1] + "+" + arr[2] + "=  " + adding + "</span></p>");
+        document.write("<p style='color:red'>Multiplication Of Three Values is " + "<span style='color:black'>" + arr[0] + "*" + arr[1] + "*" + arr[2] + "=  " + mult + "</span></p>");
+        document.write("<p style='color:red'>divition Of Three Values is " + "<span style='color:black'>" + arr[0] + "/" + arr[1] + "/" + arr[2] + "=  " + div + "</span></p>");
+    }
+    writeInDom()
+
+    </script>
+</body>
+</html>
